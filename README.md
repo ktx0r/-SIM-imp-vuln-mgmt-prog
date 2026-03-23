@@ -14,7 +14,7 @@ _**Completion State:**_ a formal policy is enacted, stakeholder buy-in is secure
 - PowerShell & BASH remediation scripts
 
 # Table of Contents
-- [Vulnerability Management Policy Draft Creation](#vulnerability-management-policy-draft-creation)
+- [Vulnerability Management Policy Draft Creation](#toggle-cipher-suites.ps1)
 - [Mock Meeting: Policy Buy-In (Stakeholders)](#step-2-mock-meeting-policy-buy-in-stakeholders)
 - [Policy Finalization and Senior Leadership Sign-Off](#step-3-policy-finalization-and-senior-leadership-sign-off)
 - [Mock Meeting: Initial Scan Permission (Server Team)](#step-4-mock-meeting-initial-scan-permission-server-team)
