@@ -45,7 +45,7 @@ In this phase, a meeting with the server team introduces the draft Vulnerability
 
 After gathering feedback from the server team, the policy is revised, addressing aggressive remediation timelines. With final approval from upper management, the policy now guides the program, ensuring compliance and reference for pushback resolution.  
 
-**[Finalized Policy](https://github.com/ktxor)**
+**[Finalized Policy](FINAL-imp-vuln-mgmt-policy.pdf)**
 
 ### STEP 4: Initial Scan Permission w/ the Server Team
 
