@@ -1,6 +1,6 @@
 # Vulnerability Management Program Implementation
 
-In this project, we simulate the implementation of a comprehensive vulnerability management program, from inception to completion.
+In this project, I will be simulating the implementation of a comprehensive vulnerability management program, from inception to completion.
 
 _**Inception State:**_ the organization has no existing policy or vulnerability management practices in place.
 
@@ -9,12 +9,11 @@ _**Completion State:**_ a formal policy is enacted, stakeholder buy-in is secure
 ![Policy Meeting](Arx_Umbra_Policy_Meeting.png)
 
 # Technology We Are Using
-- Tenable (enterprise vulnerability management platform)
-- Azure Virtual Machines (Nessus scan engine + scan targets)
-- PowerShell & BASH (remediation scripts)
+- Azure for our VM (NSG settings, Rule Making)
+- Tenable as the Vulnerability Management Platform
+- PowerShell & BASH remediation scripts
 
 # Table of Contents
-
 - [Vulnerability Management Policy Draft Creation](#vulnerability-management-policy-draft-creation)
 - [Mock Meeting: Policy Buy-In (Stakeholders)](#step-2-mock-meeting-policy-buy-in-stakeholders)
 - [Policy Finalization and Senior Leadership Sign-Off](#step-3-policy-finalization-and-senior-leadership-sign-off)
@@ -30,34 +29,34 @@ _**Completion State:**_ a formal policy is enacted, stakeholder buy-in is secure
 - [Remediation Round 4: Windows OS Updates](#remediation-round-4-windows-os-updates)
 - [First Cycle Remediation Effort Summary](#first-cycle-remediation-effort-summary)
 
-### Vulnerability Management Policy Draft Creation
+### PHASE 1: Vulnerability Management Policy Draft Creation
 
 This phase focuses on drafting a Vulnerability Management Policy as a starting point for stakeholder engagement. The initial draft outlines scope, responsibilities, and remediation timelines, and may be adjusted based on feedback from relevant departments to ensure practical implementation before final approval by upper management.  
 
 **[Draft Policy](DRAFT-imp-vuln-mgmt-prog-POLICY.pdf)**
 
-### Step 2) Mock Meeting: Policy Buy-In (Stakeholders)
+### PHASE 2 Mock Meeting: Policy Buy-In (Stakeholders)
 
 In this phase, a meeting with the server team introduces the draft Vulnerability Management Policy and assesses their capability to meet remediation timelines. Feedback leads to adjustments, like extending the critical remediation window from 48 hours to one week, ensuring collaborative implementation.
 
 ![Server Team Meeting](Arx_Umbra_Server_Management_Meeting.png)
 
-### Step 3) Policy Finalization and Senior Leadership Sign-Off
+### PHASE 3) Policy Finalization and Senior Leadership Sign-Off
 
 After gathering feedback from the server team, the policy is revised, addressing aggressive remediation timelines. With final approval from upper management, the policy now guides the program, ensuring compliance and reference for pushback resolution.  
 [Finalized Policy](https://github.com/ktxor)
 
-### Step 4) Mock Meeting: Initial Scan Permission (Server Team)
+### PHASE 4: Initial Scan Permission w/ the Server Team
 
 The team collaborates with the server team to initiate scheduled credential scans. A compromise is reached to scan a single server first, monitoring resource impact, and using just-in-time Active Directory credentials for secure, controlled access.  
 
-### Step 5) Initial Scan of Server Team Assets
+### PHASE 5: Initial Scan of Server Team Assets
 
 In this phase, an insecure Windows Server is provisioned to simulate the server team's environment. After creating vulnerabilities, an authenticated scan is performed, and the results are exported for future remediation steps.
 
 [Scan 1 - Initial Scan](https://github.com/ktx0r)
 
-### Step 6) Vulnerability Assessment and Prioritization
+### PHASE 6: Vulnerability Assessment and Prioritization
 
 We assessed vulnerabilities and established a remediation prioritization strategy based on ease of remediation and impact. The following priorities were set:
 
@@ -66,19 +65,22 @@ We assessed vulnerabilities and established a remediation prioritization strateg
 3. Windows OS Secure Configuration (Guest Account Group Membership)
 4. Windows OS Updates
 
-### Step 7) Distributing Remediations to Remediation Teams
+### PHASE 7: Distributing Remediations to Remediation Teams
 
 The server team received remediation scripts and scan reports to address key vulnerabilities. This streamlined their efforts and prepared them for a follow-up review.  
 
-### Step 8) Mock Meeting: Post-Initial Discovery Scan (Server Team)
+### PHASE 8: Mock Meeting: Post-Initial Discovery Scan (Server Team)
 
 The server team reviewed vulnerability scan results, identifying outdated software, insecure accounts, and deprecated protocols. The remediation packages were prepared for submission to the Change Control Board (CAB).
 
-### Step 9) Mock CAB Meeting: Implementing Remediations
+### PHASE 9: Mock CAB Meeting: Implementing Remediations
 
 The Change Control Board (CAB) reviewed and approved the plan to remove insecure protocols and cipher suites. The plan included a rollback script and a tiered deployment approach.
 
-### Step 10 ) Remediation Effort
+---
+---
+
+### PHASE 10: Remediation Effort
 
 #### Remediation Round 1: Outdated Wireshark Removal
 
