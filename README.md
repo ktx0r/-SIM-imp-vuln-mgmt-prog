@@ -6,7 +6,7 @@ _**Inception State:**_ the organization has no existing policy or vulnerability 
 
 _**Completion State:**_ a formal policy is enacted, stakeholder buy-in is secured, and a full cycle of organization-wide vulnerability remediation is successfully completed.
 
-![Policy Meeting](Arx_Umbra_Policy_Meeting.png)
+![Policy Meeting](vulnerability_management_meeting.png)
 
 # Technology We Are Using
 - Azure for our VM (NSG settings, Rule Making)
