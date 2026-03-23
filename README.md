@@ -29,35 +29,35 @@ _**Completion State:**_ a formal policy is enacted, stakeholder buy-in is secure
 - [Remediation Round 4: Windows OS Updates](#remediation-round-4-windows-os-updates)
 - [First Cycle Remediation Effort Summary](#first-cycle-remediation-effort-summary)
 
-### STEP 1 Vulnerability Management Policy Draft Creation
+### STEP 1: Vulnerability Management Policy Draft Creation
 
 This phase focuses on drafting a Vulnerability Management Policy as a starting point for stakeholder engagement. The initial draft outlines scope, responsibilities, and remediation timelines, and may be adjusted based on feedback from relevant departments to ensure practical implementation before final approval by upper management.  
 
 **[Draft Policy](DRAFT-imp-vuln-mgmt-prog-POLICY.pdf)**
 
-### STEP 2 Mock Meeting Policy Buy-In (Stakeholders)
+### STEP 2: Mock Meeting Policy Buy-In (Stakeholders)
 
 In this phase, a meeting with the server team introduces the draft Vulnerability Management Policy and assesses their capability to meet remediation timelines. Feedback leads to adjustments, like extending the critical remediation window from 48 hours to one week, ensuring collaborative implementation.
 
 ![Server Team Meeting](Arx_Umbra_Server_Management_Meeting.png)
 
-### STEP 3 Policy Finalization and Senior Leadership Sign-Off
+### STEP 3: Policy Finalization and Senior Leadership Sign-Off
 
 After gathering feedback from the server team, the policy is revised, addressing aggressive remediation timelines. With final approval from upper management, the policy now guides the program, ensuring compliance and reference for pushback resolution.  
 
 **[Finalized Policy](https://github.com/ktxor)**
 
-### STEP 4 Initial Scan Permission w/ the Server Team
+### STEP 4: Initial Scan Permission w/ the Server Team
 
 The team collaborates with the server team to initiate scheduled credential scans. A compromise is reached to scan a single server first, monitoring resource impact, and using just-in-time Active Directory credentials for secure, controlled access.  
 
-### STEP 5 Initial Scan of Server Team Assets
+### STEP 5: Initial Scan of Server Team Assets
 
 In this phase, an insecure Windows Server is provisioned to simulate the server team's environment. After creating vulnerabilities, an authenticated scan is performed, and the results are exported for future remediation steps.
 
 **[Scan 1 - Initial Scan](https://github.com/ktx0r)**
 
-### STEP 6 Vulnerability Assessment and Prioritization
+### STEP 6: Vulnerability Assessment and Prioritization
 
 We assessed vulnerabilities and established a remediation prioritization strategy based on ease of remediation and impact. The following priorities were set:
 
@@ -66,56 +66,56 @@ We assessed vulnerabilities and established a remediation prioritization strateg
 3. Windows OS Secure Configuration (Guest Account Group Membership)
 4. Windows OS Updates
 
-### STEP 7 Distributing Remediations to Remediation Teams
+### STEP 7: Distributing Remediations to Remediation Teams
 
 The server team received remediation scripts and scan reports to address key vulnerabilities. This streamlined their efforts and prepared them for a follow-up review.  
 
-### STEP 8 Mock Meeting: Post-Initial Discovery Scan (Server Team)
+### STEP 8: Post-Initial Discovery Scan (Server Team)
 
 The server team reviewed vulnerability scan results, identifying outdated software, insecure accounts, and deprecated protocols. The remediation packages were prepared for submission to the Change Control Board (CAB).
 
-### PHASE 9: Mock CAB Meeting: Implementing Remediations
+### STEP 9: Mock CAB Meeting: Implementing Remediations
 
 The Change Control Board (CAB) reviewed and approved the plan to remove insecure protocols and cipher suites. The plan included a rollback script and a tiered deployment approach.
 
-### PHASE 10: Remediation Effort
+### STEP 10: Remediation Effort
 
 #### Remediation Round 1: Outdated Wireshark Removal
 
-The server team used a PowerShell script to remove outdated Wireshark. A follow-up scan confirmed successful remediation.  
-[Wireshark Removal Script](https://github.com/ktx0r)
+The server team used a **[PowerShell script](remediation-wireshark-uninstall.ps1)** to remove outdated Wireshark. A follow-up scan confirmed successful remediation.
 
-[Scan 2 - Third Party Software Removal](https://drive.google.com/file/d/1UiwPPTtuSZKk02hiMyXf31pXUIeC5EWt/view?usp=drive_link)
+![scan-results-image-placeholder](scan_results_image_placeholder.jpeg)
 
+*[Wireshark removal results report](tenable-report-placeholder.pdf)*
 
 #### Remediation Round 2: Insecure Protocols & Ciphers
 
-The server team used PowerShell scripts to remediate insecure protocols and cipher suites. A follow-up scan verified successful remediation, and the results were saved for reference.  
-[PowerShell: Insecure Protocols Remediation](https://github.com/joshmadakor1/lognpacific-public/blob/main/automation/toggle-protocols.ps1)
-[PowerShell: Insecure Ciphers Remediation](https://github.com/joshmadakor1/lognpacific-public/blob/main/automation/toggle-cipher-suites.ps1)
+The server team used PowerShell scripts to remediate insecure protocols and cipher suites. A follow-up scan verified successful remediation, and the results were saved for reference.
 
-<img width="630" alt="image" src="https://github.com/user-attachments/assets/0e96120d-8ec9-4f76-8e42-79c752200010">
+**[PowerShell: Insecure Protocols Remediation](toggle-protocols.ps1)**
+**[PowerShell: Insecure Ciphers Remediation](toggle-cipher-suites.ps1)**
 
-[Scan 3 - Ciphersuites and Protocols](https://drive.google.com/file/d/1Qc6-ezQvwReCGUZNtnva0kCZo_-zW-Sm/view?usp=drive_link)
+![img](scan-results-space-holder.jpeg)
 
+**[Scan 3 - Ciphersuites and Protocols](tenable-report-space-holder.pdf)**
 
 #### Remediation Round 3: Guest Account Group Membership
 
 The server team removed the guest account from the administrator group. A new scan confirmed remediation, and the results were exported for comparison.  
-[PowerShell: Guest Account Group Membership Remediation](https://github.com/joshmadakor1/lognpacific-public/blob/main/automation/toggle-guest-local-administrators.ps1)  
 
-<img width="627" alt="image" src="https://github.com/user-attachments/assets/870a3eac-3398-44fe-91c0-96f3c2578df4">
+**[PowerShell: Guest Account Group Membership Remediation](toggle-guest-local-administrators.ps1)**
 
-[Scan 4 - Guest Account Group Removal](https://drive.google.com/file/d/1jVgikjfrV1YjOcL3QRT_oUB0Y82w22V7/view?usp=drive_link)
+![scan-results-image](scan-results-image-placeholder.jpeg)
 
+**[Scan 4 - Guest Account Group Removal](tenable-report-holder.pdf)**
 
 #### Remediation Round 4: Windows OS Updates
 
 Windows updates were re-enabled and applied until the system was fully up to date. A final scan verified the changes  
 
-<img width="627" alt="image" src="https://github.com/user-attachments/assets/870a3eac-3398-44fe-91c0-96f3c2578df4">
+[scan-results-image](scan-results-image-placeholder.jpeg)
 
-[Scan 5 - Post Windows Updates](https://drive.google.com/file/d/1tmDjeHl5uiGitRwWy8kFRi33q-nGi1Zt/view?usp=drive_link)
+**[Scan 5 - Post Windows Updates](tenable-report-placeholder.pdf)**
 
 ---
 
