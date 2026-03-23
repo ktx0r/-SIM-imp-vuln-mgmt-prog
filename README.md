@@ -55,7 +55,7 @@ The team collaborates with the server team to initiate scheduled credential scan
 
 In this phase, an insecure Windows Server is provisioned to simulate the server team's environment. After creating vulnerabilities, an authenticated scan is performed, and the results are exported for future remediation steps.
 
-[Scan 1 - Initial Scan](https://github.com/ktx0r)
+**[Scan 1 - Initial Scan](https://github.com/ktx0r)**
 
 ### STEP 6 Vulnerability Assessment and Prioritization
 
@@ -77,9 +77,6 @@ The server team reviewed vulnerability scan results, identifying outdated softwa
 ### PHASE 9: Mock CAB Meeting: Implementing Remediations
 
 The Change Control Board (CAB) reviewed and approved the plan to remove insecure protocols and cipher suites. The plan included a rollback script and a tiered deployment approach.
-
----
----
 
 ### PHASE 10: Remediation Effort
 
