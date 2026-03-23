@@ -14,15 +14,15 @@ _**Completion State:**_ a formal policy is enacted, stakeholder buy-in is secure
 - PowerShell & BASH remediation scripts
 
 # Table of Contents
-- [STEP 1 Vulnerability Management Policy Draft Creation](#step-1-vulnerability-management-policy-draft-creation)
-- [STEP 2 Mock Meeting: Policy Buy-In (Stakeholders)](#step-2-mock-meeting-policy-buy-in-stakeholders)
-- [STEP 3 Policy Finalization and Senior Leadership Sign-Off](#step-3-policy-finalization-and-senior-leadership-sign-off)
-- [STEP 4 Initial Scan Permission (Server Team)](#step-4-initial-scan-permission-w-the-server-team)
-- [STEP 5 Initial Scan of Server Team Assets](#step-5-initial-scan-of-server-team-assets)
-- [STEP 6 Vulnerability Assessment and Prioritization](#step-6-vulnerability-assessment-and-prioritization)
-- [STEP 7 Distributing Remediations to Remediation Teams](#step-7-distributing-remediations-to-remediation-teams)
-- [STEP 8 Post-Initial Discovery Scan (Server Team)](#step-8-mock-meeting-post-initial-discovery-scan-server-team)
-- [STEP 9 Implementing Remediations](#step-9-mock-cab-meeting-implementing-remediations)
+- [STEP 1: Vulnerability Management Policy Draft Creation](#step-1-vulnerability-management-policy-draft-creation)
+- [STEP 2: Mock Meeting: Policy Buy-In (Stakeholders)](#step-2-policy-buy-in-stakeholders)
+- [STEP 3: Policy Finalization and Senior Leadership Sign-Off](#step-3-policy-finalization-and-senior-leadership-sign-off)
+- [STEP 4: Initial Scan Permission (Server Team)](#step-4-initial-scan-permission-w-the-server-team)
+- [STEP 5: Initial Scan of Server Team Assets](#step-5-initial-scan-of-server-team-assets)
+- [STEP 6: Vulnerability Assessment and Prioritization](#step-6-vulnerability-assessment-and-prioritization)
+- [STEP 7: Distributing Remediations to Remediation Teams](#step-7-distributing-remediations-to-remediation-teams)
+- [STEP 8: Post-Initial Discovery Scan (Server Team)](#step-8-post-initial-discovery-scan-server-team)
+- [STEP 9: Implementing Remediations](#step-9-mock-cab-meeting-implementing-remediations)
 - [Remediation Round 1: Outdated Wireshark Removal](#remediation-round-1-outdated-wireshark-removal)
 - [Remediation Round 2: Insecure Protocols & Ciphers](#remediation-round-2-insecure-protocols--ciphers)
 - [Remediation Round 3: Guest Account Group Membership](#remediation-round-3-guest-account-group-membership)
@@ -35,7 +35,7 @@ This phase focuses on drafting a Vulnerability Management Policy as a starting p
 
 **[Draft Policy](DRAFT-imp-vuln-mgmt-prog-POLICY.pdf)**
 
-### STEP 2: Mock Meeting Policy Buy-In (Stakeholders)
+### STEP 2: Policy Buy-In (Stakeholders)
 
 In this phase, a meeting with the server team introduces the draft Vulnerability Management Policy and assesses their capability to meet remediation timelines. Feedback leads to adjustments, like extending the critical remediation window from 48 hours to one week, ensuring collaborative implementation.
 
@@ -123,15 +123,15 @@ Windows updates were re-enabled and applied until the system was fully up to dat
 
 The remediation process reduced total vulnerabilities by 80%, from 30 to 6. Critical vulnerabilities were resolved by the second scan (100%), and high vulnerabilities dropped by 90%. Mediums were reduced by 76%. In an actual production environment, asset criticality would further guide future remediation efforts.  
 
-<img width="1920" alt="image" src="https://github.com/user-attachments/assets/51f0aae8-7f36-4d90-b29f-5257e57155f9">
+[img_remediation_graph_reduction](image-vuln-reduct.jpeg)
 
-[Remediation Data](https://docs.google.com/spreadsheets/d/1FTtFfZYmFsNLU6pm8nTzsKyKE-d2ftXzX_DPwcnFNfA/edit?gid=0#gid=0)
+[Remediation Data](excel sheet link.com)
 
 ---
 
 ### On-going Vulnerability Management (Maintenance Mode)
 
-After completing the initial remediation cycle, the vulnerability management program transitions into **Maintenance Mode**. This phase ensures that vulnerabilities continue to be managed proactively, keeping systems secure over time. Regular scans, continuous monitoring, and timely remediation are crucial components of this phase. (See [Finalized Policy](https://docs.google.com/document/d/1rvueLX_71pOR8ldN9zVW9r_zLzDQxVsnSUtNar8ftdg/edit?usp=drive_link) for scanning and remediation cadence requirements.)
+After completing the initial remediation cycle, the vulnerability management program transitions into **Maintenance Mode**. This phase ensures that vulnerabilities continue to be managed proactively, keeping systems secure over time. Regular scans, continuous monitoring, and timely remediation are crucial components of this phase. (See [Finalized Policy](vuln_final.pdf) for scanning and remediation cadence requirements.)
 
 Key activities in Maintenance Mode include:
 - **Scheduled Vulnerability Scans**: Perform regular scans (e.g., weekly or monthly) to detect new vulnerabilities as systems evolve.
