@@ -14,49 +14,50 @@ _**Completion State:**_ a formal policy is enacted, stakeholder buy-in is secure
 - PowerShell & BASH remediation scripts
 
 # Table of Contents
-- [Vulnerability Management Policy Draft Creation](#toggle-cipher-suites.ps1)
-- [Mock Meeting: Policy Buy-In (Stakeholders)](#step-2-mock-meeting-policy-buy-in-stakeholders)
-- [Policy Finalization and Senior Leadership Sign-Off](#step-3-policy-finalization-and-senior-leadership-sign-off)
-- [Mock Meeting: Initial Scan Permission (Server Team)](#step-4-mock-meeting-initial-scan-permission-server-team)
-- [Initial Scan of Server Team Assets](#step-5-initial-scan-of-server-team-assets)
-- [Vulnerability Assessment and Prioritization](#step-6-vulnerability-assessment-and-prioritization)
-- [Distributing Remediations to Remediation Teams](#step-7-distributing-remediations-to-remediation-teams)
-- [Mock Meeting: Post-Initial Discovery Scan (Server Team)](#step-8-mock-meeting-post-initial-discovery-scan-server-team)
-- [Mock CAB Meeting: Implementing Remediations](#step-9-mock-cab-meeting-implementing-remediations)
+- [STEP 1 Vulnerability Management Policy Draft Creation](#step-1-vulnerability-management-policy-draft-creation)
+- [STEP 2 Mock Meeting: Policy Buy-In (Stakeholders)](#step-2-mock-meeting-policy-buy-in-stakeholders)
+- [STEP 3 Policy Finalization and Senior Leadership Sign-Off](#step-3-policy-finalization-and-senior-leadership-sign-off)
+- [STEP 4 Initial Scan Permission (Server Team)](#step-4-initial-scan-permission-w-the-server-team)
+- [STEP 5 Initial Scan of Server Team Assets](#step-5-initial-scan-of-server-team-assets)
+- [STEP 6 Vulnerability Assessment and Prioritization](#step-6-vulnerability-assessment-and-prioritization)
+- [STEP 7 Distributing Remediations to Remediation Teams](#step-7-distributing-remediations-to-remediation-teams)
+- [STEP 8 Post-Initial Discovery Scan (Server Team)](#step-8-mock-meeting-post-initial-discovery-scan-server-team)
+- [STEP 9 Implementing Remediations](#step-9-mock-cab-meeting-implementing-remediations)
 - [Remediation Round 1: Outdated Wireshark Removal](#remediation-round-1-outdated-wireshark-removal)
 - [Remediation Round 2: Insecure Protocols & Ciphers](#remediation-round-2-insecure-protocols--ciphers)
 - [Remediation Round 3: Guest Account Group Membership](#remediation-round-3-guest-account-group-membership)
 - [Remediation Round 4: Windows OS Updates](#remediation-round-4-windows-os-updates)
 - [First Cycle Remediation Effort Summary](#first-cycle-remediation-effort-summary)
 
-### PHASE 1: Vulnerability Management Policy Draft Creation
+### STEP 1 Vulnerability Management Policy Draft Creation
 
 This phase focuses on drafting a Vulnerability Management Policy as a starting point for stakeholder engagement. The initial draft outlines scope, responsibilities, and remediation timelines, and may be adjusted based on feedback from relevant departments to ensure practical implementation before final approval by upper management.  
 
 **[Draft Policy](DRAFT-imp-vuln-mgmt-prog-POLICY.pdf)**
 
-### PHASE 2 Mock Meeting: Policy Buy-In (Stakeholders)
+### STEP 2 Mock Meeting Policy Buy-In (Stakeholders)
 
 In this phase, a meeting with the server team introduces the draft Vulnerability Management Policy and assesses their capability to meet remediation timelines. Feedback leads to adjustments, like extending the critical remediation window from 48 hours to one week, ensuring collaborative implementation.
 
 ![Server Team Meeting](Arx_Umbra_Server_Management_Meeting.png)
 
-### PHASE 3) Policy Finalization and Senior Leadership Sign-Off
+### STEP 3 Policy Finalization and Senior Leadership Sign-Off
 
 After gathering feedback from the server team, the policy is revised, addressing aggressive remediation timelines. With final approval from upper management, the policy now guides the program, ensuring compliance and reference for pushback resolution.  
-[Finalized Policy](https://github.com/ktxor)
 
-### PHASE 4: Initial Scan Permission w/ the Server Team
+**[Finalized Policy](https://github.com/ktxor)**
+
+### STEP 4 Initial Scan Permission w/ the Server Team
 
 The team collaborates with the server team to initiate scheduled credential scans. A compromise is reached to scan a single server first, monitoring resource impact, and using just-in-time Active Directory credentials for secure, controlled access.  
 
-### PHASE 5: Initial Scan of Server Team Assets
+### STEP 5 Initial Scan of Server Team Assets
 
 In this phase, an insecure Windows Server is provisioned to simulate the server team's environment. After creating vulnerabilities, an authenticated scan is performed, and the results are exported for future remediation steps.
 
 [Scan 1 - Initial Scan](https://github.com/ktx0r)
 
-### PHASE 6: Vulnerability Assessment and Prioritization
+### STEP 6 Vulnerability Assessment and Prioritization
 
 We assessed vulnerabilities and established a remediation prioritization strategy based on ease of remediation and impact. The following priorities were set:
 
@@ -65,11 +66,11 @@ We assessed vulnerabilities and established a remediation prioritization strateg
 3. Windows OS Secure Configuration (Guest Account Group Membership)
 4. Windows OS Updates
 
-### PHASE 7: Distributing Remediations to Remediation Teams
+### STEP 7 Distributing Remediations to Remediation Teams
 
 The server team received remediation scripts and scan reports to address key vulnerabilities. This streamlined their efforts and prepared them for a follow-up review.  
 
-### PHASE 8: Mock Meeting: Post-Initial Discovery Scan (Server Team)
+### STEP 8 Mock Meeting: Post-Initial Discovery Scan (Server Team)
 
 The server team reviewed vulnerability scan results, identifying outdated software, insecure accounts, and deprecated protocols. The remediation packages were prepared for submission to the Change Control Board (CAB).
 
