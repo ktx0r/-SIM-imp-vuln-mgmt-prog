@@ -7,7 +7,7 @@ In this project, I will be simulating the implementation of a comprehensive vuln
 _**Inception State:**_ the organization has no existing policy or vulnerability management practices in place.
 _**Completion State:**_ a formal policy is enacted, stakeholder buy-in is secured, and a full cycle of organization-wide vulnerability remediation is successfully completed.
 
-# Technology We Are Using
+# Technology I'm Using
 - Azure for our VM (NSG settings, Rule Making)
 - Tenable as the Vulnerability Management Platform
 - PowerShell & BASH remediation scripts
