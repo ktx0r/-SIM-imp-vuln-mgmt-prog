@@ -22,7 +22,7 @@ _**Completion State:**_ a formal policy is enacted, stakeholder buy-in is secure
 - [STEP 6: Vulnerability Assessment and Prioritization](#step-6-vulnerability-assessment-and-prioritization)
 - [STEP 7: Distributing Remediations to Remediation Teams](#step-7-distributing-remediations-to-remediation-teams)
 - [STEP 8: Post-Initial Discovery Scan (Server Team)](#step-8-post-initial-discovery-scan-server-team)
-- [STEP 9: Implementing Remediations](#step-9-mock-cab-meeting-implementing-remediations)
+- [STEP 9: Implementing Remediations](#step-9-implementing-remediations)
 - [Remediation Round 1: Outdated Wireshark Removal](#remediation-round-1-outdated-wireshark-removal)
 - [Remediation Round 2: Insecure Protocols & Ciphers](#remediation-round-2-insecure-protocols--ciphers)
 - [Remediation Round 3: Guest Account Group Membership](#remediation-round-3-guest-account-group-membership)
@@ -106,7 +106,7 @@ The server team reviewed vulnerability scan results, identifying outdated softwa
 
 ---
 
-### STEP 9: Mock CAB Meeting: Implementing Remediations
+### STEP 9: Implementing Remediations
 
 The Change Control Board (CAB) reviewed and approved the plan to remove insecure protocols and cipher suites. The plan included a rollback script and a tiered deployment approach.
 
