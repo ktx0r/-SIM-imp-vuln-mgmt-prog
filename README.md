@@ -92,7 +92,9 @@ We assessed vulnerabilities and established a remediation prioritization strateg
 
 The server team received remediation scripts and scan reports to address key vulnerabilities. This streamlined their efforts and prepared them for a follow-up review.
 
-![picture of email](email_sent_pic.jpeg)
+![picture of email](remediation_email.png)
+
+[Remediation Email Markdown](remediation_email.md)
 
 ---
 
