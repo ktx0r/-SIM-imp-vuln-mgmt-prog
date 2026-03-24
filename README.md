@@ -102,7 +102,7 @@ The server team received remediation scripts and scan reports to address key vul
 
 The server team reviewed vulnerability scan results, identifying outdated software, insecure accounts, and deprecated protocols. The remediation packages were prepared for submission to the Change Control Board (CAB).
 
-![img of meeting](image_of_meeting.jpeg)
+![Discover Scan Results Meeting](disc_scan_results_meeting.png)
 
 ---
 
