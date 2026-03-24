@@ -94,7 +94,7 @@ The server team received remediation scripts and scan reports to address key vul
 
 ![picture of email](assets/remediation_email.png)
 
-[Remediation Email Markdown](assets/remediation_email.md)
+[Remediation Email Markdown](assets/remediation-email.md)
 
 ---
 
