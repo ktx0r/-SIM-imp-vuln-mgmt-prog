@@ -54,7 +54,7 @@ After gathering feedback from the server team, the policy is revised, addressing
 
 ![Final Policy Signing](final_policy_signing.png)
 
-**[Finalized Policy](FINAL-imp-vuln-mgmt-policy.pdf)**
+**[Click to view the Finalized Policy](FINAL-imp-vuln-mgmt-policy.pdf)**
 
 ---
 
@@ -62,13 +62,16 @@ After gathering feedback from the server team, the policy is revised, addressing
 
 The team collaborates with the server team to initiate scheduled credential scans. A compromise is reached to scan a single server first, monitoring resource impact, and using just-in-time Active Directory credentials for secure, controlled access.
 
+[img of meeting w/ server team about scheduled scans](image_scans_schedule.jpeg)
+
 ---
 
 ### STEP 5: Initial Scan of Server Team Assets
 
 In this phase, an insecure Windows Server is provisioned to simulate the server team's environment. After creating vulnerabilities, an authenticated scan is performed, and the results are exported for future remediation steps.
 
-**[Scan 1 - Initial Scan](https://github.com/ktx0r)**
+![scan-results-image-placeholder](scan_results_image_placeholder.jpeg)
+**[Click to see the initial scan results](https://github.com/ktx0r)**
 
 ---
 
@@ -85,7 +88,9 @@ We assessed vulnerabilities and established a remediation prioritization strateg
 
 ### STEP 7: Distributing Remediations to Remediation Teams
 
-The server team received remediation scripts and scan reports to address key vulnerabilities. This streamlined their efforts and prepared them for a follow-up review.  
+The server team received remediation scripts and scan reports to address key vulnerabilities. This streamlined their efforts and prepared them for a follow-up review.
+
+![picture of email](email_sent_pic.jpeg)
 
 ---
 
@@ -93,11 +98,15 @@ The server team received remediation scripts and scan reports to address key vul
 
 The server team reviewed vulnerability scan results, identifying outdated software, insecure accounts, and deprecated protocols. The remediation packages were prepared for submission to the Change Control Board (CAB).
 
+![img of meeting](image_of_meeting.jpeg)
+
 ---
 
 ### STEP 9: Mock CAB Meeting: Implementing Remediations
 
 The Change Control Board (CAB) reviewed and approved the plan to remove insecure protocols and cipher suites. The plan included a rollback script and a tiered deployment approach.
+
+![img of meeting](image_of_meeting.jpeg)
 
 ---
 
