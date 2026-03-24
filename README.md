@@ -63,7 +63,7 @@ After gathering feedback from the server team, the policy is revised, addressing
 
 The team collaborates with the server team to initiate scheduled credential scans. A compromise is reached to scan a single server first, monitoring resource impact, and using just-in-time Active Directory credentials for secure, controlled access.
 
-[img of meeting w/ server team about scheduled scans](image_scans_schedule.jpeg)
+![img of meeting w/ server team about scheduled scans](scheduling_credentialed_scans.png)
 
 ---
 
@@ -72,6 +72,7 @@ The team collaborates with the server team to initiate scheduled credential scan
 In this phase, an insecure Windows Server is provisioned to simulate the server team's environment. After creating vulnerabilities, an authenticated scan is performed, and the results are exported for future remediation steps.
 
 ![scan-results-image-placeholder](scan_results_image_placeholder.jpeg)
+
 **[Click to see the initial scan results](https://github.com/ktx0r)**
 
 ---
