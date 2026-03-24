@@ -35,9 +35,9 @@ _**Completion State:**_ a formal policy is enacted, stakeholder buy-in is secure
 
 This phase focuses on drafting a Vulnerability Management Policy as a starting point for stakeholder engagement. The initial draft outlines scope, responsibilities, and remediation timelines, and may be adjusted based on feedback from relevant departments to ensure practical implementation before final approval by upper management.
 
-![Policy Meeting](vulnerability_management_meeting.png)
+![Policy Meeting](assets/vulnerability_management_meeting.png)
 
-**[Click to view my fancy Draft Policy](DRAFT-imp-vuln-mgmt-policy.pdf)**
+**[Click to view my fancy Draft Policy](assets/DRAFT-imp-vuln-mgmt-policy.pdf)**
 
 ---
 
@@ -53,9 +53,9 @@ In this phase, a meeting with the server team introduces the draft Vulnerability
 
 After gathering feedback from the server team, the policy is revised, addressing aggressive remediation timelines. With final approval from upper management, the policy now guides the program, ensuring compliance and reference for pushback resolution.  
 
-![Final Policy Signing](final_policy_signing.png)
+![Final Policy Signing](assets/final_policy_signing.png)
 
-**[Click to view the Finalized Policy](FINAL-imp-vuln-mgmt-policy.pdf)**
+**[Click to view the Finalized Policy](assets/FINAL-imp-vuln-mgmt-policy.pdf)**
 
 ---
 
@@ -63,7 +63,7 @@ After gathering feedback from the server team, the policy is revised, addressing
 
 The team collaborates with the server team to initiate scheduled credential scans. A compromise is reached to scan a single server first, monitoring resource impact, and using just-in-time Active Directory credentials for secure, controlled access.
 
-![img of meeting w/ server team about scheduled scans](scheduling_credentialed_scans.png)
+![img of meeting w/ server team about scheduled scans](assets/scheduling_credentialed_scans.png)
 
 ---
 
@@ -71,9 +71,9 @@ The team collaborates with the server team to initiate scheduled credential scan
 
 In this phase, an insecure Windows Server is provisioned to simulate the server team's environment. After creating vulnerabilities, an authenticated scan is performed, and the results are exported for future remediation steps.
 
-![initial scan results](DC-01_initial_scan_results.png)
+![initial scan results](assets/DC-01_initial_scan_results.png)
 
-**[Click to see the initial scan results from Tenable](DC-01_initial_scan_yg34u4.pdf)**
+**[Click to see the initial scan results from Tenable](assets/DC-01_initial_scan_yg34u4.pdf)**
 
 ---
 
@@ -92,9 +92,9 @@ We assessed vulnerabilities and established a remediation prioritization strateg
 
 The server team received remediation scripts and scan reports to address key vulnerabilities. This streamlined their efforts and prepared them for a follow-up review.
 
-![picture of email](remediation_email.png)
+![picture of email](assets/remediation_email.png)
 
-[Remediation Email Markdown](remediation_email.md)
+[Remediation Email Markdown](assets/remediation_email.md)
 
 ---
 
@@ -102,7 +102,7 @@ The server team received remediation scripts and scan reports to address key vul
 
 The server team reviewed vulnerability scan results, identifying outdated software, insecure accounts, and deprecated protocols. The remediation packages were prepared for submission to the Change Control Board (CAB).
 
-![Discover Scan Results Meeting](disc_scan_results_meeting.png)
+![Discover Scan Results Meeting](assets/disc_scan_results_meeting.png)
 
 ---
 
@@ -110,7 +110,7 @@ The server team reviewed vulnerability scan results, identifying outdated softwa
 
 The Change Control Board (CAB) reviewed and approved the plan to remove insecure protocols and cipher suites. The plan included a rollback script and a tiered deployment approach.
 
-![img of meeting](image_of_meeting.jpeg)
+![img of meeting](assets/image_of_meeting.jpeg)
 
 ---
 
@@ -118,40 +118,40 @@ The Change Control Board (CAB) reviewed and approved the plan to remove insecure
 
 #### Remediation Round 1: Outdated Wireshark Removal
 
-The server team used a **[PowerShell script](remediation-wireshark-uninstall.ps1)** to remove outdated Wireshark. A follow-up scan confirmed successful remediation.
+The server team used a **[PowerShell script](assets/remediation-wireshark-uninstall.ps1)** to remove outdated Wireshark. A follow-up scan confirmed successful remediation.
 
-![scan-results-image-placeholder](scan_results_image_placeholder.jpeg)
+![scan-results-image-placeholder](assets/scan_results_image_placeholder.jpeg)
 
-*[Wireshark removal results report](tenable-report-placeholder.pdf)*
+*[Wireshark removal results report](assets/tenable-report-placeholder.pdf)*
 
 #### Remediation Round 2: Insecure Protocols & Ciphers
 
 The server team used PowerShell scripts to remediate insecure protocols and cipher suites. A follow-up scan verified successful remediation, and the results were saved for reference.
 
-**[PowerShell: Insecure Protocols Remediation](toggle-protocols.ps1)**
-**[PowerShell: Insecure Ciphers Remediation](toggle-cipher-suites.ps1)**
+**[PowerShell: Insecure Protocols Remediation](assets/toggle-protocols.ps1)**
+**[PowerShell: Insecure Ciphers Remediation](assets/toggle-cipher-suites.ps1)**
 
-![img](scan-results-space-holder.jpeg)
+![img](assets/scan-results-space-holder.jpeg)
 
-**[Scan 3 - Ciphersuites and Protocols](tenable-report-space-holder.pdf)**
+**[Scan 3 - Ciphersuites and Protocols](assets/tenable-report-space-holder.pdf)**
 
 #### Remediation Round 3: Guest Account Group Membership
 
 The server team removed the guest account from the administrator group. A new scan confirmed remediation, and the results were exported for comparison.  
 
-**[PowerShell: Guest Account Group Membership Remediation](toggle-guest-local-administrators.ps1)**
+**[PowerShell: Guest Account Group Membership Remediation](assets/toggle-guest-local-administrators.ps1)**
 
-![scan-results-image](scan-results-image-placeholder.jpeg)
+![scan-results-image](assets/scan-results-image-placeholder.jpeg)
 
-**[Scan 4 - Guest Account Group Removal](tenable-report-holder.pdf)**
+**[Scan 4 - Guest Account Group Removal](assets/tenable-report-holder.pdf)**
 
 #### Remediation Round 4: Windows OS Updates
 
 Windows updates were re-enabled and applied until the system was fully up to date. A final scan verified the changes  
 
-[scan-results-image](scan-results-image-placeholder.jpeg)
+[scan-results-image](assets/scan-results-image-placeholder.jpeg)
 
-**[Scan 5 - Post Windows Updates](tenable-report-placeholder.pdf)**
+**[Scan 5 - Post Windows Updates](assets/tenable-report-placeholder.pdf)**
 
 ---
 
@@ -159,7 +159,7 @@ Windows updates were re-enabled and applied until the system was fully up to dat
 
 The remediation process reduced total vulnerabilities by 80%, from 30 to 6. Critical vulnerabilities were resolved by the second scan (100%), and high vulnerabilities dropped by 90%. Mediums were reduced by 76%. In an actual production environment, asset criticality would further guide future remediation efforts.  
 
-[img_remediation_graph_reduction](image-vuln-reduct.jpeg)
+[img_remediation_graph_reduction](assets/image-vuln-reduct.jpeg)
 
 [Remediation Data](excel sheet link.com)
 
@@ -167,7 +167,7 @@ The remediation process reduced total vulnerabilities by 80%, from 30 to 6. Crit
 
 ### On-going Vulnerability Management (Maintenance Mode)
 
-After completing the initial remediation cycle, the vulnerability management program transitions into **Maintenance Mode**. This phase ensures that vulnerabilities continue to be managed proactively, keeping systems secure over time. Regular scans, continuous monitoring, and timely remediation are crucial components of this phase. (See [Finalized Policy](vuln_final.pdf) for scanning and remediation cadence requirements.)
+After completing the initial remediation cycle, the vulnerability management program transitions into **Maintenance Mode**. This phase ensures that vulnerabilities continue to be managed proactively, keeping systems secure over time. Regular scans, continuous monitoring, and timely remediation are crucial components of this phase. (See [Finalized Policy](assets/vuln_final.pdf) for scanning and remediation cadence requirements.)
 
 Key activities in Maintenance Mode include:
 - **Scheduled Vulnerability Scans**: Perform regular scans (e.g., weekly or monthly) to detect new vulnerabilities as systems evolve.
