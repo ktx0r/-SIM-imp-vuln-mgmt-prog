@@ -1,4 +1,4 @@
-![Vulnerability Management Program Implementation](vuln-mgmt-prog-imp.png)
+![Vulnerability Management Program Implementation](assets/vuln-mgmt-prog-imp.png)
 
 # Vulnerability Management Program Implementation
 
