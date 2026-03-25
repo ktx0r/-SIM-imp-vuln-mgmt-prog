@@ -11,7 +11,7 @@ _**Completion State:**_ a formal policy is enacted, stakeholder buy-in is secure
 # Technology I'm Using
 - Azure for our VM (NSG settings, Rule Making)
 - Tenable as the Vulnerability Management Platform
-- PowerShell & BASH remediation scripts
+- PowerShell for remediation scripts
 
 # Table of Contents
 - [STEP 1: Vulnerability Management Policy Draft Creation](#step-1-vulnerability-management-policy-draft-creation)
