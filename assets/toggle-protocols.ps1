@@ -5,9 +5,9 @@
     Make sure to run as Administrator or with appropriate privileges.
 
 .NOTES
-    Author        : Josh Madakor
-    Date Created  : 2024-09-09
-    Last Modified : 2024-09-09
+    Author        : Katie Plaster
+    Date Created  : 2026-03-23
+    Last Modified : 2026-03-23
     Version       : 1.0
 
 .TESTED ON
