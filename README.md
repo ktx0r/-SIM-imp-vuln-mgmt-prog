@@ -100,7 +100,7 @@ The server team received remediation scripts and scan reports to address key vul
 
 ### STEP 8: Post-Initial Discovery Scan (Server Team)
 
-The server team reviewed vulnerability scan results, identifying outdated software, insecure accounts, and deprecated protocols. The remediation packages were prepared for submission to the Change Control Board (CAB).
+The server team reviewed vulnerability scan results, identifying outdated software, insecure accounts, and deprecated protocols. The remediation packages were prepared for submission to the Change Advisory Board (CAB).
 
 ![Discover Scan Results Meeting](assets/disc_scan_results_meeting.png)
 
@@ -108,7 +108,7 @@ The server team reviewed vulnerability scan results, identifying outdated softwa
 
 ### STEP 9: Implementing Remediations
 
-The Change Control Board (CAB) reviewed and approved the plan to remove insecure protocols and cipher suites. The plan included a rollback script and a tiered deployment approach.
+The Change Advisory Board (CAB) reviewed and approved the plan to remove insecure protocols and cipher suites. The plan included a rollback script and a tiered deployment approach.
 
 ![img of meeting](assets/image_of_meeting.jpeg)
 
