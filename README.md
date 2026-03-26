@@ -159,9 +159,9 @@ Windows updates were re-enabled and applied until the system was fully up to dat
 
 The remediation process reduced total vulnerabilities by 80%, from 30 to 6. Critical vulnerabilities were resolved by the second scan (100%), and high vulnerabilities dropped by 90%. Mediums were reduced by 76%. In an actual production environment, asset criticality would further guide future remediation efforts.  
 
-[img_remediation_graph_reduction](assets/image-vuln-reduct.jpeg)
+![img_remediation_graph_reduction](assets/image-vuln-reduct.jpeg)
 
-[Remediation Data](excel sheet link.com)
+[Remediation Data](excel-sheet-link.com)
 
 ---
 
