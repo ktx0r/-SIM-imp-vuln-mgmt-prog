@@ -122,18 +122,18 @@ The server team used a **[PowerShell script](assets/remediation-wireshark-uninst
 
 ![scan-results-image-placeholder](assets/DC-01_wireshark_removal_scan_results.png)
 
-*[Wireshark removal results report](assets/DC-01_remediation_scan_wireshark_removal_jqysbn.pdf)*
+**[Click to see the Wireshark removal scan results from Tenable](assets/DC-01_remediation_scan_wireshark_removal_jqysbn.pdf)**
 
 #### Remediation Round 2: Insecure Protocols & Ciphers
 
-The server team used PowerShell scripts to remediate insecure protocols and cipher suites. A follow-up scan verified successful remediation, and the results were saved for reference.
+The server team used the following PowerShell scripts to remediate insecure protocols and cipher suites. A follow-up scan verified successful remediation, and the results were saved for reference.
 
 **[PowerShell: Insecure Protocols Remediation](assets/toggle-protocols.ps1)**
 **[PowerShell: Insecure Ciphers Remediation](assets/toggle-cipher-suites.ps1)**
 
 ![img](assets/scan-results-space-holder.jpeg)
 
-**[Scan 3 - Ciphersuites and Protocols](assets/tenable-report-space-holder.pdf)**
+**[Click to view insecure protocol and cipher remediation scan results from Tenable](assets/tenable-report-space-holder.pdf)**
 
 #### Remediation Round 3: Guest Account Group Membership
 
@@ -143,7 +143,7 @@ The server team removed the guest account from the administrator group. A new sc
 
 ![scan-results-image](assets/scan-results-image-placeholder.jpeg)
 
-**[Scan 4 - Guest Account Group Removal](assets/tenable-report-holder.pdf)**
+**[Click to view insecure guest account remediation scan results from Tenable](assets/tenable-report-holder.pdf)**
 
 #### Remediation Round 4: Windows OS Updates
 
@@ -151,7 +151,7 @@ Windows updates were re-enabled and applied until the system was fully up to dat
 
 [scan-results-image](assets/scan-results-image-placeholder.jpeg)
 
-**[Scan 5 - Post Windows Updates](assets/tenable-report-placeholder.pdf)**
+**[Click to view post-Windows Updates scan results from Tenable](assets/tenable-report-placeholder.pdf)**
 
 ---
 
