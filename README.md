@@ -131,7 +131,7 @@ The server team used the following PowerShell scripts to remediate insecure prot
 **[PowerShell: Insecure Protocols Remediation](assets/toggle-protocols.ps1)**
 **[PowerShell: Insecure Ciphers Remediation](assets/toggle-cipher-suites.ps1)**
 
-![Remediation Scan Results](DC-01_remediation_scan_insecure_cipher_and_protocols.png)
+![Remediation Scan Results](assets/DC-01_remediation_scan_insecure_cipher_and_protocols.png)
 
 **[Click to view insecure protocol and cipher remediation scan results from Tenable](assets/DC-01_remediation_scan_insecure_cipher_and_protocols_791j2v.pdf)**
 
