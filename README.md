@@ -131,9 +131,9 @@ The server team used the following PowerShell scripts to remediate insecure prot
 **[PowerShell: Insecure Protocols Remediation](assets/toggle-protocols.ps1)**
 **[PowerShell: Insecure Ciphers Remediation](assets/toggle-cipher-suites.ps1)**
 
-![img](assets/scan-results-space-holder.jpeg)
+![Remediation Scan Results](DC-01_remediation_scan_insecure_cipher_and_protocols.png)
 
-**[Click to view insecure protocol and cipher remediation scan results from Tenable](assets/tenable-report-space-holder.pdf)**
+**[Click to view insecure protocol and cipher remediation scan results from Tenable](assets/DC-01_remediation_scan_insecure_cipher_and_protocols_791j2v.pdf)**
 
 #### Remediation Round 3: Guest Account Group Membership
 
