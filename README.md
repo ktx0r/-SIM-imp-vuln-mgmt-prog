@@ -120,9 +120,9 @@ The Change Advisory Board (CAB) reviewed and approved the plan to remove insecur
 
 The server team used a **[PowerShell script](assets/remediation-wireshark-uninstall.ps1)** to remove outdated Wireshark. A follow-up scan confirmed successful remediation.
 
-![scan-results-image-placeholder](assets/scan_results_image_placeholder.jpeg)
+![scan-results-image-placeholder](assets/DC-01_wireshark_removal_scan_results.png)
 
-*[Wireshark removal results report](assets/tenable-report-placeholder.pdf)*
+*[Wireshark removal results report](assets/DC-01_remediation_scan_wireshark_removal_jqysbn.pdf)*
 
 #### Remediation Round 2: Insecure Protocols & Ciphers
 
