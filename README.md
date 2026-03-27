@@ -86,6 +86,13 @@ We assessed vulnerabilities and established a remediation prioritization strateg
 3. Windows OS Secure Configuration (Guest Account Group Membership)
 4. Windows OS Updates
 
+| Issue                              | Risk Level | Ease of Fix | Priority | Reason                                                           |
+| ---------------------------------- | ---------- | ----------- | -------- | ---------------------------------------------------------------- |
+| Outdated Software (Wireshark)      | High       | Easy        | 1        | Easily removable and reduces immediate exposure                  |
+| Deprecated Protocols (TLS 1.0/1.1) | High       | Moderate    | 2        | Significant security risk, but requires compatibility validation |
+| Weak Cipher Suites                 | Medium     | Moderate    | 3        | Improves security posture, but less urgent than protocol removal |
+| Guest Account in Admin Group       | High       | Easy        | 4        | Critical misconfiguration, but low immediate exposure risk       |
+
 ---
 
 ### STEP 7: Distributing Remediations to Remediation Teams
