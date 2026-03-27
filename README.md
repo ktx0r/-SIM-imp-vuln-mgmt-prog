@@ -112,6 +112,8 @@ The Change Advisory Board (CAB) reviewed and approved the plan to remove insecur
 
 ![Server Team Manager meets with the Change Advisory Board](assets/cab_and_server_meeting.png)
 
+**[Click to view rollback plan](assets/rollback_plan.md)**
+
 ---
 
 ### Remediation Effort
