@@ -37,7 +37,7 @@ This phase focuses on drafting a Vulnerability Management Policy as a starting p
 
 ![General Policy Meeting of IT people around a table](assets/vulnerability_management_meeting.png)
 
-**[Click to view my fancy Draft Policy](assets/DRAFT-imp-vuln-mgmt-policy.pdf)**
+**[Click to view Draft Vulnerability Management Policy](assets/DRAFT-imp-vuln-mgmt-policy.pdf)**
 
 ---
 
@@ -79,7 +79,7 @@ In this phase, an insecure Windows Server is provisioned to simulate the server 
 
 ### STEP 6: Vulnerability Assessment and Prioritization
 
-We assessed vulnerabilities and established a remediation prioritization strategy based on ease of remediation and impact. The following priorities were set:
+We assessed vulnerabilities and established a remediation prioritization strategy based on risk, ease of remediation, and business impact. The following priorities were set:
 
 1. Third Party Software Removal (Wireshark)
 2. Windows OS Secure Configuration (Protocols & Ciphers)
@@ -115,7 +115,7 @@ The server team reviewed vulnerability scan results, identifying outdated softwa
 
 ### STEP 9: Implementing Remediations
 
-The Change Advisory Board (CAB) reviewed and approved the plan to remove insecure protocols and cipher suites. The plan included a rollback script and a tiered deployment approach.
+The Change Advisory Board (CAB) approval was granted following risk evaluation and confirmation of rollback readiness. The Rollback Plan a tiered deployment approach.
 
 ![Server Team Manager meets with the Change Advisory Board over remediating insecure cipher suites and protocols](assets/cab_and_server_meeting.png)
 
