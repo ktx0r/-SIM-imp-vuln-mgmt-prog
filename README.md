@@ -115,7 +115,7 @@ The server team reviewed vulnerability scan results, identifying outdated softwa
 
 ### STEP 9: Implementing Remediations
 
-The Change Advisory Board (CAB) approval was granted following risk evaluation and confirmation of rollback readiness. The Rollback Plan a tiered deployment approach.
+The Change Advisory Board (CAB) approval was granted following risk evaluation and confirmation of rollback readiness. The Rollback Plan includes a tiered deployment approach.
 
 ![Server Team Manager meets with the Change Advisory Board over remediating insecure cipher suites and protocols](assets/cab_and_server_meeting.png)
 
