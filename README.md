@@ -35,7 +35,7 @@ _**Completion State:**_ a formal policy is enacted, stakeholder buy-in is secure
 
 This phase focuses on drafting a Vulnerability Management Policy as a starting point for stakeholder engagement. The initial draft outlines scope, responsibilities, and remediation timelines, and may be adjusted based on feedback from relevant departments to ensure practical implementation before final approval by upper management.
 
-![Policy Meeting](assets/vulnerability_management_meeting.png)
+![General Policy Meeting of IT people around a table](assets/vulnerability_management_meeting.png)
 
 **[Click to view my fancy Draft Policy](assets/DRAFT-imp-vuln-mgmt-policy.pdf)**
 
@@ -45,7 +45,7 @@ This phase focuses on drafting a Vulnerability Management Policy as a starting p
 
 In this phase, a meeting with the server team introduces the draft Vulnerability Management Policy and assesses their capability to meet remediation timelines. Feedback leads to adjustments, like extending the critical remediation window from 48 hours to one week, ensuring collaborative implementation.
 
-![Server Team Meeting](assets/Arx_Umbra_Server_Management_Meeting.png)
+![Meeting with Server Team Manager about timelines](assets/Arx_Umbra_Server_Management_Meeting.png)
 
 ---
 
@@ -53,7 +53,7 @@ In this phase, a meeting with the server team introduces the draft Vulnerability
 
 After gathering feedback from the server team, the policy is revised, addressing aggressive remediation timelines. With final approval from upper management, the policy now guides the program, ensuring compliance and reference for pushback resolution.  
 
-![Final Policy Signing](assets/final_policy_signing.png)
+![Policy Finalization after making timeline changes](assets/final_policy_signing.png)
 
 **[Click to view the Finalized Policy](assets/FINAL-imp-vuln-mgmt-policy.pdf)**
 
@@ -63,7 +63,7 @@ After gathering feedback from the server team, the policy is revised, addressing
 
 The team collaborates with the server team to initiate scheduled credential scans. A compromise is reached to scan a single server first, monitoring resource impact, and using just-in-time Active Directory credentials for secure, controlled access.
 
-![img of meeting w/ server team about scheduled scans](assets/scheduling_credentialed_scans.png)
+![Meeting with Server Team Manager about scheduling scans](assets/scheduling_credentialed_scans.png)
 
 ---
 
@@ -71,7 +71,7 @@ The team collaborates with the server team to initiate scheduled credential scan
 
 In this phase, an insecure Windows Server is provisioned to simulate the server team's environment. After creating vulnerabilities, an authenticated scan is performed, and the results are exported for future remediation steps.
 
-![initial scan results](assets/DC-01_initial_scan_results.png)
+![Results of the initial scan](assets/DC-01_initial_scan_results.png)
 
 **[Click to see the initial scan results from Tenable](assets/DC-01_initial_scan_yg34u4.pdf)**
 
@@ -99,9 +99,9 @@ We assessed vulnerabilities and established a remediation prioritization strateg
 
 The server team received remediation scripts and scan reports to address key vulnerabilities. This streamlined their efforts and prepared them for a follow-up review.
 
-![picture of email](assets/remediation_email.png)
+![Email template for sending to involved teams and members](assets/remediation_email.png)
 
-**[Remediation Email Markdown](assets/remediation-email.md)**
+**[Click to view the remediation email template](assets/remediation-email.md)**
 
 ---
 
@@ -109,7 +109,7 @@ The server team received remediation scripts and scan reports to address key vul
 
 The server team reviewed vulnerability scan results, identifying outdated software, insecure accounts, and deprecated protocols. The remediation packages were prepared for submission to the Change Advisory Board (CAB).
 
-![Discover Scan Results Meeting](assets/disc_scan_results_meeting.png)
+![Meeting with Server Team Manager to go over scan results](assets/disc_scan_results_meeting.png)
 
 ---
 
@@ -117,7 +117,7 @@ The server team reviewed vulnerability scan results, identifying outdated softwa
 
 The Change Advisory Board (CAB) reviewed and approved the plan to remove insecure protocols and cipher suites. The plan included a rollback script and a tiered deployment approach.
 
-![Server Team Manager meets with the Change Advisory Board](assets/cab_and_server_meeting.png)
+![Server Team Manager meets with the Change Advisory Board over remediating insecure cipher suites and protocols](assets/cab_and_server_meeting.png)
 
 **[Click to view rollback plan](assets/rollback_plan.md)**
 
@@ -129,7 +129,7 @@ The Change Advisory Board (CAB) reviewed and approved the plan to remove insecur
 
 The server team used a **[PowerShell script](assets/remediation-wireshark-uninstall.ps1)** to remove outdated Wireshark. A follow-up scan confirmed successful remediation.
 
-![scan-results-image-placeholder](assets/DC-01_wireshark_removal_scan_results.png)
+![Scan results after Wireshark remediation](assets/DC-01_wireshark_removal_scan_results.png)
 
 **[Click to see the Wireshark removal scan results from Tenable](assets/DC-01_remediation_scan_wireshark_removal_jqysbn.pdf)**
 
@@ -140,7 +140,7 @@ The server team used the following PowerShell scripts to remediate insecure prot
 **[PowerShell: Insecure Protocols Remediation](assets/toggle-protocols.ps1)**
 **[PowerShell: Insecure Ciphers Remediation](assets/toggle-cipher-suites.ps1)**
 
-![Remediation Scan Results](assets/DC-01_remediation_scan_insecure_cipher_and_protocols.png)
+![Scan results after remediation of insecure ciphers and protocols](assets/DC-01_remediation_scan_insecure_cipher_and_protocols.png)
 
 **[Click to view insecure protocol and cipher remediation scan results from Tenable](assets/DC-01_remediation_scan_insecure_cipher_and_protocols_791j2v.pdf)**
 
@@ -150,7 +150,7 @@ The server team removed the guest account from the administrator group. A new sc
 
 **[PowerShell: Guest Account Group Membership Remediation](assets/toggle-guest-local-administrators.ps1)**
 
-![scan-results-image](assets/DC-01_scan_removed_guest_account.png)
+![Scan results after remediation of Guest Account insecurities](assets/DC-01_scan_removed_guest_account.png)
 
 **[Click to view insecure guest account remediation scan results from Tenable](assets/DC-01_scan_removed_guest_account_h11tqf.pdf)**
 
@@ -158,7 +158,7 @@ The server team removed the guest account from the administrator group. A new sc
 
 Windows updates were re-enabled and applied until the system was fully up to date. A final scan did not result in any further remediations on the severity scale.
 
-![Post-Windows Updates Scan Results](assets/DC-01_post-windows_updates_scan.png)
+![Scan results Post-Windows Updates](assets/DC-01_post-windows_updates_scan.png)
 
 **[Click to view post-Windows Updates scan results from Tenable](assets/DC-01_post-windows_updates_scan_un7aea.pdf)**
 
@@ -168,7 +168,7 @@ Windows updates were re-enabled and applied until the system was fully up to dat
 
 The remediation process reduced total vulnerabilities by over 75%, from 33 to 8. Critical vulnerabilities were resolved by the second scan (100%), and high vulnerabilities dropped by 90%. Mediums were reduced by almost 78%. In an actual production environment, asset criticality would further guide future remediation efforts.
 
-![img_remediation_graph_reduction](assets/remediation_severity_graph.png)
+![Graph of remediation cycle efforts](assets/remediation_severity_graph.png)
 
 **[Click to view Remediation Severity Progress Data Sheet](https://docs.google.com/spreadsheets/d/1uhTRhsfTymfghi-0YQ7jodOHj-HClFYcC3pJSKZYoXk/edit?usp=sharing)**
 
