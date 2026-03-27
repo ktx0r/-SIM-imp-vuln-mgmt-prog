@@ -94,7 +94,7 @@ The server team received remediation scripts and scan reports to address key vul
 
 ![picture of email](assets/remediation_email.png)
 
-[Remediation Email Markdown](assets/remediation-email.md)
+**[Remediation Email Markdown](assets/remediation-email.md)**
 
 ---
 
@@ -110,7 +110,7 @@ The server team reviewed vulnerability scan results, identifying outdated softwa
 
 The Change Advisory Board (CAB) reviewed and approved the plan to remove insecure protocols and cipher suites. The plan included a rollback script and a tiered deployment approach.
 
-![img of meeting](assets/image_of_meeting.jpeg)
+![Server Team Manager meets with the Change Advisory Board](assets/cab_and_server_meeting.png)
 
 ---
 
@@ -157,17 +157,17 @@ Windows updates were re-enabled and applied until the system was fully up to dat
 
 ### First Cycle Remediation Effort Summary
 
-The remediation process reduced total vulnerabilities by 80%, from 30 to 6. Critical vulnerabilities were resolved by the second scan (100%), and high vulnerabilities dropped by 90%. Mediums were reduced by 76%. In an actual production environment, asset criticality would further guide future remediation efforts.  
+The remediation process reduced total vulnerabilities by over 75%, from 33 to 8. Critical vulnerabilities were resolved by the second scan (100%), and high vulnerabilities dropped by 90%. Mediums were reduced by almost 78%. In an actual production environment, asset criticality would further guide future remediation efforts.
 
-![img_remediation_graph_reduction](assets/image-vuln-reduct.jpeg)
+![img_remediation_graph_reduction](assets/remediation_severity_graph.png)
 
-[Remediation Data](excel-sheet-link.com)
+**[Click to view Remediation Severity Progress Data Sheet](https://docs.google.com/spreadsheets/d/1uhTRhsfTymfghi-0YQ7jodOHj-HClFYcC3pJSKZYoXk/edit?usp=sharing)**
 
 ---
 
 ### On-going Vulnerability Management (Maintenance Mode)
 
-After completing the initial remediation cycle, the vulnerability management program transitions into **Maintenance Mode**. This phase ensures that vulnerabilities continue to be managed proactively, keeping systems secure over time. Regular scans, continuous monitoring, and timely remediation are crucial components of this phase. (See [Finalized Policy](assets/vuln_final.pdf) for scanning and remediation cadence requirements.)
+After completing the initial remediation cycle, the vulnerability management program transitions into **Maintenance Mode**. This phase ensures that vulnerabilities continue to be managed proactively, keeping systems secure over time. Regular scans, continuous monitoring, and timely remediation are crucial components of this phase. (See [Finalized Policy](assets/FINAL-imp-vuln-mgmt-policy.pdf) for scanning and remediation cadence requirements.)
 
 Key activities in Maintenance Mode include:
 - **Scheduled Vulnerability Scans**: Perform regular scans (e.g., weekly or monthly) to detect new vulnerabilities as systems evolve.
