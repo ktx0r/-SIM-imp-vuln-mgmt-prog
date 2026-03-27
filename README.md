@@ -55,7 +55,7 @@ After gathering feedback from the server team, the policy is revised, addressing
 
 ![Policy Finalization after making timeline changes](assets/final_policy_signing.png)
 
-**[Click to view the Finalized Policy](assets/FINAL-imp-vuln-mgmt-policy.pdf)**
+**[Click to view the Finalized Vulnerability Management Policy](assets/FINAL-imp-vuln-mgmt-policy.pdf)**
 
 ---
 
