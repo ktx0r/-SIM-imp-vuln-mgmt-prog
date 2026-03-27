@@ -114,7 +114,7 @@ The Change Advisory Board (CAB) reviewed and approved the plan to remove insecur
 
 ---
 
-### STEP 10: Remediation Effort
+### Remediation Effort
 
 #### Remediation Round 1: Outdated Wireshark Removal
 
