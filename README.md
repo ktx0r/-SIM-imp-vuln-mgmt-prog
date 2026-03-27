@@ -149,7 +149,7 @@ The server team removed the guest account from the administrator group. A new sc
 
 Windows updates were re-enabled and applied until the system was fully up to date. A final scan did not result in any further remediations on the severity scale.
 
-[Post-Windows Updates Scan Results](assets/DC-01_post-windows_updates_scan.png)
+![Post-Windows Updates Scan Results](assets/DC-01_post-windows_updates_scan.png)
 
 **[Click to view post-Windows Updates scan results from Tenable](assets/DC-01_post-windows_updates_scan_un7aea.pdf)**
 
