@@ -141,9 +141,9 @@ The server team removed the guest account from the administrator group. A new sc
 
 **[PowerShell: Guest Account Group Membership Remediation](assets/toggle-guest-local-administrators.ps1)**
 
-![scan-results-image](assets/scan-results-image-placeholder.jpeg)
+![scan-results-image](assets/DC-01_scan_removed_guest_account.png)
 
-**[Click to view insecure guest account remediation scan results from Tenable](assets/tenable-report-holder.pdf)**
+**[Click to view insecure guest account remediation scan results from Tenable](assets/DC-01_scan_removed_guest_account_h11tqf.pdf)**
 
 #### Remediation Round 4: Windows OS Updates
 
